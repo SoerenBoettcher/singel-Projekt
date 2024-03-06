@@ -1,9 +1,8 @@
 import readline from "readline-sync"
 
 export function textToWords(text) {
-    const wordRegex = /\b\w+\b/g;
-    const matches = text.match(wordRegex);
-    return matches ? matches : [];
+    const textArr = text.split(" ");
+    return textArr;
 }
 
 export function wordCounter (text) {
