@@ -29,7 +29,11 @@
 
 ### Code Erläuterung der function.js
 
-1. textToWords(text): Diese Funktion nimmt einen Text als Eingabe und verwendet eine reguläre Ausdrucksmethode, um alle Wörter im Text zu extrahieren. Die reguläre Expression /\b\w+\b/g sucht nach allen Worten im Text, wobei ein Wort durch eine oder mehrere Buchstaben oder Zahlen definiert ist. Das Ergebnis ist ein Array von Wörtern, das zurückgegeben wird.
+1. export function textToWords(text) {: Dies definiert eine exportierte Funktion namens textToWords, die einen Parameter text annimmt. Diese Funktion kann aus einem anderen Modul importiert werden.
+
+const textArr = text.split(" ");: Diese Zeile teilt den übergebenen Text in Wörter auf. Die split()-Methode wird verwendet, um den Text in Teile zu zerlegen, wobei das Leerzeichen als Trennzeichen verwendet wird. Das Ergebnis ist ein Array von Wörtern, das in der Konstanten textArr gespeichert wird.
+
+return textArr;: Die Funktion gibt das Array textArr zurück, das die Wörter des ursprünglichen Textes enthält.
 
 2. wordCounter(text): Diese Funktion ruft textToWords(text) auf, um alle Wörter im Text zu erhalten, und gibt dann die Anzahl der Wörter zurück, die im Text gefunden wurden.
 
