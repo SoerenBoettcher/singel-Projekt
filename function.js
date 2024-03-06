@@ -20,7 +20,7 @@ export function uniqueWords (text) {
 }
 
 export function searchLongestWord(text) {
-    const words = text.split(/\s+/);
+    const words = text.split(' ');
     let longestWord = "";
     
     for (const word of words) {
