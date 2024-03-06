@@ -1,5 +1,5 @@
 import readline from "readline-sync"
-import {  wordCounter, uniqueWords, searchLongestWord } from "./function.js";
+import { wordCounter, uniqueWords, searchLongestWord } from "./function.js";
 
 function ausfuehren () {
     const text = readline.question("Geben Sie bitte hier Ihren Text ein: ");
